@@ -1,0 +1,26 @@
+<!--pages/toVote/toVote.wxml-->
+<view class='toVoteContainer'>
+  <view class='head'>
+    <image src='{{data.img}}'></image>
+  </view>
+  <view class='separate'></view>
+  <view class='foodName'> 
+    <text> {{data.name}}</text>
+  </view>
+  <view class='separate'></view>
+  <view class='num'>
+    <text>当前票数:</text>
+    <text>{{data.num}}</text>
+  </view>
+  <view class='separate'></view>
+  <view class='score'>
+    <text>你的剩余分数:</text>
+    <text>{{data.score}}</text>
+  </view>
+  <view class='separate'> </view>
+  <view class='votePanel' >
+    <!-- 这里需要使用input中 的inputTyping的函数让inputVal发生变化 -->
+      <input type='text' value="{{inputVal}}" bindinput="inputTyping"/>
+      <button catchtap='vote' class="weui-btn green-btn" hover-class="green-hover-class" size="mini">投票</button>
+  </view>
+</view>

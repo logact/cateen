@@ -1,0 +1,18 @@
+<view class='foodRateContainer'>
+  <form  bindsubmit="formSubmit" bindreset="formReset">
+    <view class='separate'></view>
+    <block wx:for='{{options}}' wx:key='index'>
+      <view data-name='{{item.name}}' class='option'>
+        <text  class='name'>{{item.name}}</text>
+        <input name='{{item.name}}inputVal'/>
+      </view>
+      <slider name="{{item.name}}val" show-value ></slider>
+      <view class='separate'></view>
+    </block>
+    <view class="btn-area">
+      <button formType="submit">Submit</button>
+      <button formType="reset">Reset</button>
+    </view>
+  </form>
+
+</view>

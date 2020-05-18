@@ -1,0 +1,66 @@
+{
+    "pages": [
+  
+      "pages/index/index",
+      "pages/foodRate/foodRate",
+      
+      "pages/toVote/toVote",
+      "pages/voteFoodDetail/voteFoodDetail",
+      "pages/shop/shop",
+      "pages/shopReview/shopReview",
+      "pages/search/search",
+      
+      "pages/review/review",
+      "pages/reviewDetail/reviewDatail",
+      "pages/blog/blog",
+      "pages/blogDetail/blogDetail",
+      "pages/test/test",
+      "pages/activityDetail/activityDetail",
+      "pages/activity/activity",
+      "pages/favoriter/favoriter",
+      "pages/personInfo/personInfo",
+      "pages/foodDetail/foodDetail",
+      "pages/home/home",
+      "pages/person/person"
+  ],
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "/images/tab/home.png",
+        "selectedIconPath": "/images/tab/home.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人",
+        "iconPath": "/images/tab/person.png",
+        "selectedIconPath": "/images/tab/person.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/images/tab/search.png",
+        "selectedIconPath": "/images/tab/search.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "/images/tab/favoriter.png",
+        "selectedIconPath": "/images/tab/favoriter.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8ED145",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

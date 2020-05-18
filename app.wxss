@@ -1,0 +1,24 @@
+/**app.wxss**/
+@import '/style/weui.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.myLable{
+  font-size:x-small;
+  font-weight: 200;
+  border:2rpx solid  #f2f2f2;
+  margin-left: 10rpx;
+  background-color: #f2f2f2;
+  border-radius: 12rpx;
+}
+
+.separate {
+  height: 15rpx;
+  background-color: #f2f2f2;
+} 

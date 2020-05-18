@@ -1,0 +1,49 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<view>
+	<swiper indicator-dots autoplay catchtap="goToAdvertisementDetail">
+		<block wx:for="{{advertisement}}" wx:key="index">
+			<swiper-item>
+				<image data-url='{{item.url}}' src="{{item.imgSrc}}"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<view class="navs">
+		<block wx:for-items="{{navs}}" wx:key="name">
+		  <view class="nav-item" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+			<image src="{{item.icon}}" class="nav-image"/>
+			<text>{{item.name}}</text>
+		  </view>
+		</block>
+	</view>
+	<view class="separate"></view>  
+	<view class="foodList">
+		<block wx:for="{{foodList}}" wx:key="index">
+			<view data-id="{{item.id}}" class="foodBox" catchtap="goToFoodDetail">
+				<view  class="imgBox">
+					<image src="{{item.imgSrc}}" />
+					<view class="score">评分:{{item.score}}</view>
+				</view>
+				<view class="foodDetails">
+					<!-- <view class="row"> -->
+					<text class="name">品名: {{item.name}} </text>
+					<text class="desc">简述: {{item.desc}}</text>
+					<!-- </view> -->
+					<!-- <view class="row"> -->
+					<text class="shop">店名: {{item.shop}}</text>
+					<text class="location">位置: {{item.location}}</text>
+				
+					<!-- </view> -->
+					<view class='labels'>
+						<block wx:for="{{item.tags}}"wx:for-index="index1" wx:for-item="cItem" wx:key="index">
+							<label class="myLable" >{{cItem.name}}</label>
+						</block>		
+					</view>
+				</view>
+				
+			</view>
+			<view class="separate"></view>
+		</block>
+	</view>
+</view>

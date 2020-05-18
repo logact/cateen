@@ -1,0 +1,64 @@
+/* pages/review/review.wxss */
+.reviewContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .header{
+    margin: 10rpx;
+  }
+  .reviewList{
+    display:flex;
+    flex-direction:column;
+  
+  }
+  .left{
+    width:  20%;
+  }
+  .aReview{
+    display: flex;
+    flex-direction: row;
+  }
+  .aReview image{
+    width: 100rpx;
+    height: 100rpx;
+    margin: 10rpx;
+  }
+  .rightMain{
+    margin-right: 10px;
+    margin-left: 10rpx;
+    display: flex;
+    /* 这里要左对齐 */
+    flex-direction: column;
+  }
+  .author{
+    font-size: smaller;
+    font-weight: 200;
+  }
+  .childReviews{
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    margin-right: 10rpx;
+  }
+  .count{
+    margin-right:30rpx
+  }
+  .aChildReview{
+    display: inline-flex
+  }
+  .aChildReview .content{
+    font-size: smaller;
+    font-weight: 200;
+  }
+  
+  .sum{
+    font-size:smaller;
+    font-weight: 200;
+  }
+  .publishDate{
+    margin-top:20rpx;
+    font-size: x-small;
+    font-weight: 200;
+  }
+  
+  

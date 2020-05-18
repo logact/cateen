@@ -1,0 +1,66 @@
+<view class='searchContainer'>
+	<view class='header'>
+		<view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+			<form class="weui-search-bar__form">
+				<view class="weui-search-bar__box">
+					<i class="weui-icon-search"></i>
+					<input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}"
+						focus="{{inputShowed}}" bindinput="inputTyping" />
+					<span class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput"></span>
+				</view>
+				<label class="weui-search-bar__label" bindtap="showInput">
+					<i class="weui-icon-search"></i>
+					<span class="weui-search-bar__text">搜索</span>
+				</label>
+			</form>
+			<view class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+		</view>
+		<view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+			<block wx:for='{{relatedSearch}}' wx:key='index'>
+				<view class="weui-cell weui-cell_active weui-cell_access">
+					<view class="weui-cell__bd weui-cell_primary">
+						<view catchtap='changeContent'>{{item.name}}</view>
+					</view>
+				</view>
+			</block>
+		</view>
+	</view>
+	<view class='main'>
+		<view class='main-left'>
+			<view data-id='推荐' catchtap='focus' class="{{focus=='推荐' ? 'focusing' : ''}}">
+				<text> 推荐</text>
+			</view>
+			<view data-id="好店" catchtap='focus' class="{{focus=='好店'? 'focusing' : ''}}">
+				<text > 好店</text>
+			</view>
+			<view data-id="新食堂" catchtap='focus' class="{{focus=='新食堂'? 'focusing' : ''}}">
+				<text> 新食堂</text>
+			</view>
+			<view data-id='旧食堂' catchtap='focus' class="{{focus=='旧食堂'? 'focusing' : ''}}">
+				<text> 旧食堂</text>
+			</view>
+			<view data-id="面食" catchtap='focus' class="{{focus=='面食'? 'focusing' : ''}}">
+				<text> 面食</text>
+			</view>
+			<view data-id="米饭" catchtap='focus' class="{{focus=='米饭'? 'focusing' : ''}}">
+				<text>米饭</text>
+			</view>
+		</view>
+		<view class='main-right'>
+			<view class='main-right-up'>
+				<image class='main-pic' src='{{headImg}}'></image>
+			</view>
+			<view class='spe'>-{{focus}}分类-</view>
+			<view class='main-right-down'>
+				<view class='list'>
+					<blocK wx:for='{{types}}' wx:key='index'>
+						<view class='box'>
+							<image src='{{item.img}}'> </image>
+							<view class='title'> <text>{{item.name}}</text> </view>
+						</view>
+					</blocK>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

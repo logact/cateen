@@ -1,0 +1,31 @@
+<!--pages/reviewDetail/reviewDeatil.wxml-->
+<view class='reviewDetail'>
+    <view class='mainReview'>
+        <view class='left'>
+            <image src='{{review.avatar}}'></image>
+        </view>
+        <view class='right'>
+            <view>
+                <text class='author'>{{review.author}}</text>
+                <text class='date'>{{review.date}}</text>
+            </view>
+            <text class='content'>{{review.content}}</text>
+        </view>
+    </view>
+    <view class='childReviews'>
+        <block wx:for='{{childReviews}}' wx:key='index'>
+            <view class='childReview'>
+                <view class='left'>
+                    <image src='{{item.avatar}}'></image>
+                </view>
+                <view class='right'>
+                    <view>
+                        <text class='author'>{{item.author}}</text>
+                        <text class='date'>{{item.date}}</text>
+                    </view>
+                    <text class='content'>{{item.content}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

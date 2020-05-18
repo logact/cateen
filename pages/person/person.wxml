@@ -1,0 +1,11 @@
+<!--pages/person/person.wxml-->
+<view>
+  <view class="userInfo">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}</text>  
+    <button catchtap="goToPersonInfo">个人信息</button>
+    <button>消息</button>
+    <button catchtap="goToBlog">我的博客</button>
+    <button catchtap="goToFavoriter">我的收藏</button>
+  </view>
+</view>

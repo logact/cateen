@@ -1,0 +1,29 @@
+<!--pages/blog/blog.wxml-->
+<view class='blogContainer'>
+  <view class='header'> 
+    
+  </view>
+  <view class='separate'></view>
+  <block wx:for="{{blogList}}" wx:key="index">
+    <view class="header">
+      <image src="{{item.author.img}}"></image>
+      <view class="textContainer">
+          <text>{{item.author.username}}</text>
+          <text>{{item.publish}}</text>
+      </view>
+    </view>
+    <view data-id="{{item.id}}" class="blogBox" catchtap="goToBlogDetail">
+      <text class="content">
+        {{item.content}}
+      </text>
+      <image class="blogImg" src="{{item.img}}"></image>
+      <view class="collection_love">
+        <image src="/images/icon/star.png" />
+        <text >{{item.love_count}}</text>
+        <image src="/images/icon/view.png" />
+        <text>{{item.attention_count}}</text>
+      </view>
+    </view>
+    <view class='separate'></view>
+  </block>
+</view>

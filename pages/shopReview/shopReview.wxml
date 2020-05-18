@@ -1,0 +1,43 @@
+<!--pages/review/review.wxml-->
+<view class='reviewContainer'>
+  <view class='header'>
+      <text  class='title'>{{title}}</text>
+      <view class='count' >
+          <text catchTap='tabToGood'>好评:{{goodCount}}</text>
+          <text catchTap='tabToMiddle'>中评:{{middleCount}}</text>
+          <text catchTap='tabToBad'>差评:{{badCount}}</text>
+      </view>
+  </view>
+  <view class='reviewList' >
+      <block wx:for='{{reviews}}' wx:key="index">
+          <view class='aReview'>
+              <view class='left'> <image src='{{item.avatar}}'></image> </view>
+              <view data-id='{{item.id}}' class='rightMain' catchtap='biggerChildReview'> 
+                  <text class='author' >{{item.author}}</text>
+                  <text>{{item.content}}</text>
+                  <view  class='childReviews' >   
+                      <block wx:for-index="cIndex" wx:for-item="cItem" wx:for='{{item.childReviews}}'>
+                          <view  wx:if='{{cIndex<=2}}' class='aChildReview' >
+                              <text wx:if="{{cItem.toId!=item.authorId}}" class='author'>{{cItem.from}} 回复 {{cItem.to}}:</text>
+                              <text wx:else class='author'> {{cItem.from}} :</text>
+                              <text class='content' >{{cItem.content}}</text>
+                          </view> 
+                          <view wx:else>
+                              <text class='sum' >共{{item.sum}}条回复></text>
+                          </view>
+                      </block>
+                  </view>
+              </view>
+              <view class='footer'>
+                  <view class='publishDate'>
+                      <text class='publishDate'>{{item.publishDate}}</text>
+                  </view>
+                  <view class='labels'>
+                      <image class='like' src='/images/icon/1.png'></image>
+                      <image class='replay' src='/images/icon/1.png'></image>
+                  </view>
+              </view>                                        
+          </view>
+      </block> 
+  </view> 
+</view>

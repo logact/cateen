@@ -1,0 +1,36 @@
+let datas=[
+    {
+        'img':'/images/test/2.png',
+        'id':1,
+        'avaror':'/images/test/1.png',
+        'author':'jack',
+        'date':'2010/2/3',
+        'title':'xx',
+        'detail_content':'ljlkjjljlkjjljlkjjljfdsafasadfadsfasdfhfhjgfngdlkjj'
+    },{
+        'img':'/images/test/3.png',
+        'id':1,
+        'avaror':'/images/test/1.png',
+        'author':'jack',
+        'date':'2010/2/3',
+        'title':'xx',
+        'detail_content':'ljlkjjljlkceqrsdfasdfgejjljlkjjljlkjj'
+    },{
+        'img':'/images/test/4.png',
+        'id':1,
+        'avaror':'/images/test/1.png',
+        'author':'monica',
+        'date':'2010/2/3',
+        'title':'xx',
+        'detail_content':'ljlkjjljlkfasdfasdfasdfsadfjjljlkjjljlkjj'
+    },{
+        'img':'/images/test/5.png',
+        'id':2,
+        'avaror':'/images/test/1.png',
+        'author':'jessica',
+        'date':'2010/2/3',
+        'title':'xx',
+        'detail_content':'fsdfasdfasljlkjjljlkjfsdfadsfjljlkjjljlkjj'
+    },
+]
+module.exports={datas}

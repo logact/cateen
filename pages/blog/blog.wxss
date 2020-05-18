@@ -1,0 +1,41 @@
+.blogContainer{
+    display:flex;
+    flex-direction: column;
+}
+.blogImg{
+    height: 200rpx;
+}
+.header{
+    margin-top:20rpx;
+    display:flex;
+    flex-direction: row;
+}
+.header .textContainer{
+    display: flex;
+    flex-direction: row;
+    font-size: smaller;
+    font-weight: 200;
+}
+.collection_love{
+    margin-top: 15rpx;
+}
+.header text{
+    margin:5rpx;
+}
+.header image{
+    width: 60rpx;
+    height: 60rpx;   
+}
+.blogBox{
+    display: flex;
+    flex-direction: column;
+}
+.collection_love{
+    display:flex;
+    flex-direction: row;
+}
+.collection_love image{
+    margin-left:20rpx ;
+    width:50rpx;
+    height:50rpx;
+}

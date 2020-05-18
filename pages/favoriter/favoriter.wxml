@@ -1,0 +1,33 @@
+<!--pages/favoriter/favoriter.wxml-->
+<!-- <text>pages/favoriter/favoriter.wxml</text> -->
+<view>
+	<view class="header">
+		<label catchtap="handleLable" class='{{label=="delicacy"?"focus":""}}' data-id="delicacy">美食</label>
+		<label catchtap="handleLable" class='{{label=="shop"?"focus":""}}' data-id="shop">店铺</label>
+		<label catchtap="handleLable" class='{{label=="blog"?"focus":""}}' data-id="blog">博客</label>
+		<label catchtap="handleLable" class='{{label=="activity"?"focus":""}}' data-id="activity">活动</label>
+	</view>
+	<view class="dataList">
+		<block wx:for="{{dataList}}" wx:key="index">
+			<view data-id="{{item.id}}"  class="info">
+				<image catchtap="goToFavoriterDetail" src="{{item.imgSrc}}"></image>
+				<view catchtap="goToFavoriterDetail" class="descAndLabel">
+					<view class="desc">
+						<text class="title">{{item.title}}</text>
+						<text class="date">{{item.date}}</text>	
+					</view>
+					<view class='delete'>删除</view>
+					
+				</view>
+			</view>
+		</block>
+
+	</view>
+	<!-- <view>
+    <web-view src="https://fanyi.baidu.com/"></web-view>
+  </view> -->
+
+	<view>
+
+	</view>
+</view>

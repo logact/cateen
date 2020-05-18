@@ -1,0 +1,28 @@
+/* pages/toVote/toVote.wxss */
+.toVoteContainer {
+  margin: 18rpx;
+}
+
+.foodName {
+  font-weight: 600;
+}
+
+.green-btn {
+  background-color: #5cadff;
+  color: #fff;
+}
+
+.green-hover-class {
+  background-color: #2d8cf0;
+  color: #fff;
+}
+.votePanel{
+  display:  flex;
+  flex-direction: row;
+  
+  align-items: center;
+}
+.votePanel input{
+  border: 2rpx solid black;
+  width: 300rpx;
+}

@@ -1,0 +1,84 @@
+<view class='shopContainer'>
+	<swiper indicator-dots autoplay >
+		<block wx:for="{{shopInfo.images}}" wx:key="index">
+			<swiper-item>
+				<image data-url='{{item.url}}' src="{{item.img}}"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class='separate'>	</view>
+	<view class='shopName'>
+	<text>{{shopInfo.name}}</text>	
+	<view class='labels'>
+		<view class='label'>
+			<view  catchtap='handleCollected'	class='img'>
+				<image wx:if='{{collected}}' src='/images/icon/collection.png'></image>
+				<image wx:else src='/images/icon/collection-anti.png'></image>
+			</view>
+			<text>{{shopInfo.collectedNum}}</text>
+		</view>
+		<view class="label">
+			<view class='img'>
+				<image  src='/images/icon/good-hand.ico'></image>	  		
+			</view>
+			<text>{{shopInfo.collectedNum}}</text>
+		</view>
+	</view>
+	</view>
+	<view class='detailInfo'>
+		<view class='rate'>评分：{{shopInfo.rate}}</view>
+		<view class='view'>近一个月浏览量：{{shopInfo.view}}</view>
+	</view>
+	<view class='separate'></view>
+	<view class='location'>
+		<image src='/images/icon/location.svg'></image>
+		{{shopInfo.location}}
+	</view>
+	<view class='separate'></view>
+	<view class='todayMenu'>
+		<text> 今日上菜</text>
+		<view class='menuList'>
+			<block wx:for='{{shopInfo.todayMenu}}'>
+				<view class='menuBox'>  
+					<image src='{{item.imgSrc}}'></image>
+					<text >{{item.name}}</text>
+				</view>
+			</block>
+		</view>
+	</view>
+	<view class='separate'></view>
+	<view class='menu'>
+		<text> 店内菜品</text>
+		<view class='menuList' >
+			<block wx:for='{{shopInfo.menu}}'>
+				<view class='menuBox'>
+					<image src='{{item.imgSrc}}'></image>
+					<text>{{item.name}}</text>
+				</view>
+			</block>
+		</view>
+	</view>
+	<view class='separate'></view>
+	<view class='menu'>
+		<text> 推荐菜品</text>
+		<view class='menuList' >
+			<block wx:for='{{shopInfo.recommendMenu}}'>
+				<view class='menuBox'>
+					<image src='{{item.imgSrc	}}'></image>
+					<text>{{item.name}}</text>
+				</view>
+			</block>
+		</view>
+	</view>
+	<view class='separate'></view>
+	<view catchtap='goToVote' class=''>
+		<text>明天吃啥</text>
+	</view>
+	<view class='separate'></view>
+	<view class=' footer'>
+		<text catchtap='goToComment'> 评论</text>
+		<text catchtap='goToRate'>评分</text>
+	</view>
+	
+
+</view>

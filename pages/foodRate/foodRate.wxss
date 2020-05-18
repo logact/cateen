@@ -1,0 +1,17 @@
+/* pages/foodRate/foodRate.wxss */
+.foodRateContainer{
+  margin:18rpx;
+}
+.option{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.option input{
+  border:1rpx solid lightgray;
+  width:500rpx;
+}
+.btn-area{
+  display: flex;
+  flex-direction: row;
+}

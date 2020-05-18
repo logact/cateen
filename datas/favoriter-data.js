@@ -1,0 +1,80 @@
+/**
+ * 有删除的需求
+ */
+let delicacyList= [
+  {
+    imgSrc:"/images/test/1.png",
+    id:"1",
+    title:"腊肉",
+    date:"2019/10/23"
+  },
+  {
+    imgSrc:"/images/test/1.png",
+    id:"1",
+    title:"腊肉",
+    date:"2019/10/23"
+  },
+  {
+    imgSrc:"/images/test/1.png",
+    id:"1",
+    title:"腊肉",
+    date:"2019/10/23"
+  }
+]
+let shopList=[
+  {
+    imgSrc:"/images/test/1.png",
+    id:"1",
+    title:"红烧肉",
+    date:"2019/10/23"
+  },
+  {
+    imgSrc:"/images/test/1.png",
+    id:"1",
+    title:"腊肉",
+    date:"2019/10/23"
+  },
+  {
+    imgSrc:"/images/test/1.png",
+    id:"1",
+    title:"腊肉",
+    date:"2019/10/23"
+  }
+]
+let blogList=[{
+  imgSrc:"/images/test/1.png",
+  id:"1",
+  title:"腊肉",
+  date:"2019/10/23"
+},
+{
+  imgSrc:"/images/test/1.png",
+  id:"1",
+  title:"腊肉",
+  date:"2019/10/23"
+},
+{
+  imgSrc:"/images/test/1.png",
+  id:"1",
+  title:"腊肉",
+  date:"2019/10/23"
+}]
+let activityList=[{
+  imgSrc:"/images/test/1.png",
+  id:"1",
+  title:"腊肉",
+  date:"2019/10/23"
+},
+{
+  imgSrc:"/images/test/1.png",
+  id:"1",
+  title:"腊肉",
+  date:"2019/10/23"
+},
+{
+  imgSrc:"/images/test/1.png",
+  id:"1",
+  title:"腊肉",
+  date:"2019/10/23"
+}]
+module.exports={delicacyList,shopList,blogList,activityList}

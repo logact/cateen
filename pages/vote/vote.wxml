@@ -1,0 +1,15 @@
+<!--pages/vote/vote.wxml-->
+<view class='voteContainer'>
+  <view class='foodList'>
+    <block wx:for='{{foodList}}'>
+      <view catchtap='goToVoteFoodDetail' data-id='{{item.id}}' class='foodBox'>
+        <image src='{{item.img}}'></image>
+        <view class='desc' >
+          <text>{{item.name}}</text>
+          <text>热度： {{item.num}}</text>
+        </view>
+        <view class='separate'></view>
+      </view>
+    </block>
+  </view>
+</view>

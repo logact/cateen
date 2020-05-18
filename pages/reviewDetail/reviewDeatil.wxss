@@ -1,0 +1,31 @@
+/* pages/reviewDetail/reviewDeatil.wxss */
+.mainReview{
+    margin-top: 60rpx;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray ;
+}
+
+.author{
+    font-size: smaller;
+    font-weight: 300;
+    margin-right: 20rpx;
+}
+.date{
+    font-size: smaller;
+    font-weight: 300;
+}
+
+.childReview{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 10% ;
+}
+.left image{
+    width:50rpx;
+    height:50rpx;
+    border-radius: 50%;
+
+}

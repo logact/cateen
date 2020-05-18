@@ -1,0 +1,68 @@
+/* pages/hoLe/home.wxss */
+.foodList{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.labels{
+  margin-top:10rpx;
+}
+.score{
+  margin-left: 20rpx;
+  font-size:30rpx;
+  font-weight: 300;
+  font-family: cursive;
+  font-style: italic;
+}
+.navs {
+  display: flex;
+}
+.nav-item {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20rpx;
+}
+.nav-item .nav-image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+
+.foodBox{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  border-radius: 50%,50%;
+
+}
+.imgBox{
+  align-items: center;
+  margin-right: 15rpx;
+}
+.imgBox image{
+  height: 150rpx;
+  width: 150rpx;
+}
+.row{
+  display: table-row; 
+}
+.desc{
+  float: right;
+}
+.location{
+  float:right;
+}
+
+
+.foodDetails{
+  font-size :x-small;
+  display: flex;
+  flex-direction: column;
+}
+.separate {
+  height: 15rpx;
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,41 @@
+/* pages/activity/activity.wxss */
+.header{
+  font-size: smaller;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  margin-top: 15rpx;
+  display:  flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.activityInfo{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+}
+/**
+这里有一个问题如何把这个换行对齐处理好？
+*/
+.activityInfo .info{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  font-size: x-small;
+  font-weight: 300;
+}
+.activityInfo image{
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 10rpx;
+}
+.focus{
+  color:blue
+}
+.foodBox{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  border-radius: 50%,50%;
+}

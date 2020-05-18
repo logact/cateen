@@ -1,0 +1,40 @@
+<!--pages/activityDetail/activityDetail.wxml-->
+<!-- <text>pages/activityDetail/activityDetail.wxml</text> -->
+<view class="mainContainer">
+	<view>
+		<image src="{{detail.imgSrc}}"></image>
+	</view>
+	<view class="basicInfo">
+		<text>活动标题: {{detail.title}}</text>
+		<text>活动状态: {{detail.status}}</text>
+		<text>开始时间: {{detail.startTime}}</text>
+		<text>结束时间: {{detail.endTime}}</text>
+		<text>发起者: {{detail.initiator }}</text>
+		<text>每个人限制的票数: {{detail.singleLimit}}</text>
+		<text>积分限制: {{detail.scoreLimit}}</text>
+		<text>等级限制: {{detail.levelLimit}}</text>
+    <text> 优惠劵数量:{{detail.sum}}</text>
+	</view>
+  <view class="description">
+    <textarea>{{detail.desc}}</textarea>
+  </view>
+	<!-- 开始的活动 -->
+	<view style="font-size: x-small;font-weight: 200;"	class="startExtra" wx:if="{{detail.statusCode=='1'}}" class="start">
+		<text>	正在参加的人数:{{detail.participants}}</text>
+		<text>优惠劵剩余数量: {{detail.remaining}}</text>
+    <button data-id="{{deatil.id}}" bindtap="goTostart">点击参与</button>
+	</view>
+	<!-- 结束的活动 -->
+	<view style="font-size: x-small;font-weight: 200;" class="endExtra" wx:if="{{detail.statusCode=='3'}}" class="start">
+		<text >参加的人数:{{detail.participants}}</text>
+    <text>  </text>
+		<text>总共发出的优惠劵:{{detail.publish}}</text>
+	</view>
+	<!-- 还未开始的活动 -->
+	<view style="font-size: x-small;font-weight: 200;" class="readyExtra" wx:if="{{detail.statusCode=='2'}}" class="start">
+		<text> 预约的人数:{{detail.subscribe}}</text>
+		<text> </text>
+		<text> 离活动开始的时间:{{detail.remainingTime}}</text>
+    <button data-id="{{detail.id}}" catchtap="subscribe">点击预约</button>
+	</view>
+</view>

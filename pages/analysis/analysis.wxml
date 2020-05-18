@@ -1,0 +1,13 @@
+<!--pages/analysis/analysis.wxml-->
+<view class='container'>
+    <view class='header'>
+        <image class='foodImg'>{{foodImg}}</image>
+        <view> <text class='title'></text></view>
+        <text> :</text>
+        <picker bindchange="pickAreaChange" value="{{areaIndex}}" range="{{areas}}">
+            <view class="area">
+                <text>{{areas[areaIndex]}}</text>
+            </view>
+        </picker>
+    </view>
+</view>

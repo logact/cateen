@@ -1,0 +1,70 @@
+/* pages/search/search.wxss */
+page{
+  height: 100%;
+  background-color: white;
+}
+.main-right{
+  display: flex;
+  flex-direction: row;
+  margin:15rpx;
+}
+.main-pic{
+  width:600rpx;
+  height: 220rpx;
+}
+.main-left{
+  width:120rpx;
+}
+.main-left view{
+  margin-top:40rpx;
+  font-size:small;
+  font-weight: 350;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+}
+.main-right {
+  margin-top:40rpx;
+  align-items: center;
+  flex:display;
+  flex-direction: column; 
+}
+.list{
+  display: flex;
+  flex-direction: column;
+}
+.main-rigth{
+  display:flex;
+}
+.main-right-down .list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.main-right-down image{
+  width:100rpx;
+  height: 100rpx;
+}
+.focusing{
+  color: blue;
+}
+.box{
+  margin:35rpx;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: smaller;
+  font-weight: 300;
+}
+.spe{
+  margin:20rpx;
+  text-align: center;
+  font-size:small;
+  font-weight: 250;
+}
+
+.searchbar-result{margin-top:0;font-size:14px}.searchbar-result .weui-cell__bd{padding:2px 0 2px 20px;color:var(--weui-FG-1)}.searchbar-result:before{display:none}

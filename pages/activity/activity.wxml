@@ -1,0 +1,23 @@
+<!--pages/activity/activity.wxml-->
+<view class="header">
+	<text  class='{{focus=="已开始"?"focus":""}}'  data-id='已开始' catchtap="switchToStart">  已开始</text>
+	<text class='{{focus=="未开始"?"focus":""}}'  data-id='未开始'  catchtap="switchToReady"> 未开始</text>
+	<text class='{{focus=="近期结束"?"focus":""}}' data-id='近期结束'  catchtap="switchToEnd"> 近期结束</text>
+</view>
+<view class='separate'></view>
+<view class="activityList">
+<!-- 这里如果data-id是放在与方法一起的标签上那么就是currentTarget 不然就是target -->
+	<block wx:for="{{activityList}}" wx:key="index">
+		<view data-id="{{item.id}}" catchtap="goToActivityDetail" class="activityInfo">
+			<image  src="{{item.imgSrc}}"></image>
+			<view class="info">
+				<text>标题: {{item.title}}</text>
+				<text>开始时间: {{item.startTime}}</text>
+				<text>结束时间: {{item.endTime}}</text>
+				<text>简述: {{item.desc}}</text>
+				<text>发起人: {{item.initiator}}</text>
+			</view>
+		</view>
+		<view class='separate'></view>
+	</block>
+</view>

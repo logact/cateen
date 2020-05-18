@@ -1,0 +1,71 @@
+.shopContainer{
+  margin:18rpx;
+}
+.shopName{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.shopName image{
+  width: 35rpx;
+  height: 35rpx;
+}
+.detailInfo{
+  display: flex;
+  flex-direction: row;
+  font-size:x-small;
+  font-weight: 300;
+}
+.rate{
+  margin-right:18rpx;
+}
+.location{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: small;
+  font-weight: 300;
+}
+.location image{
+  width:35rpx;
+  height:35rpx;
+  margin-right:18rpx;
+}
+.menuList{
+  margin-top:13rpx;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: small;
+}
+.menuBox{
+  margin-left:15rpx;
+  width:23%
+}
+.menuBox image{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  width:140rpx;
+  height:140rpx;
+}
+.label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+  font-size:xx-small;
+  margin-right: 10rpx;
+}
+.labels{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}

@@ -1,0 +1,55 @@
+/* pages/activityDetail/activityDetail.wxss */
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.basicInfo{
+  margin-top:25rpx;
+  margin-bottom:25rpx;
+  margin-left:5rpx;
+  margin-right:5rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.basicInfo text{
+  margin-bottom: 10rpx;
+  font-size: small;
+  font-weight: 300;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  width: 47%;
+}
+
+.description{
+  font-size: 32rpx;
+  text-indent: 32rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #f2f2f2;
+}
+.endExtra{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size:x-small;
+  font-weight: 200;
+}
+.readyExtra{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 300;
+  font-size: x-small;
+}
+.startExtra{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size:x-small;
+  font-weight: 200;
+}
